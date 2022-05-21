@@ -6,14 +6,14 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Urbanist", sans-serif;
 }
 
 /* ............................... NAVIGATION SECTION ............................. */
 nav {
     width: 100%;
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 nav > .navMenu {
     display: flex;
@@ -48,6 +48,15 @@ nav > .navMenu > .centerNav > ul > li {
     list-style: none !important;
     margin-right: 1rem;
     font-weight: 400;
+    cursor: pointer;
+    font-size: 1.3rem;
+
+}
+
+nav > .navMenu > .centerNav > ul > li:hover {
+    
+    font-weight: 600;
+    
 
 }
 
@@ -63,6 +72,7 @@ nav > .navMenu > .rightNav > .cartIcon {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    cursor: pointer;
 
 }
 
@@ -73,4 +83,80 @@ nav > .navMenu > .rightNav > .cartIcon > .fas {
 nav > .navMenu > .rightNav > .cartIcon > .fas > .cartItem {
     vertical-align: super;
 
+}
+
+/* .................................. SLIDER SECTION ........................................... */
+#sliderSection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+#sliderSection > .arrowLeft, #sliderSection > .arrowRight {
+    width: 3.125rem;
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff7f7;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 5;
+    opacity: 0.5;
+
+}
+
+#sliderSection > .arrowLeft {
+    left: 0.5rem
+}
+#sliderSection > .arrowRight {
+    right: 0.5rem
+}
+
+#sliderSection > .sliderWrapper {
+    display: flex;
+    height: 100%;
+    
+}
+
+#sliderSection > .sliderWrapper > .slides {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#sliderSection > .sliderWrapper > .slides > .sliderImgContainer {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sliderSection > .sliderWrapper > .slides > .sliderImgContainer > img {
+    
+    height: 80%;
+}
+
+#sliderSection > .sliderWrapper > .slides > .sliderInfoContainer {
+    flex: 1;
+}
+
+.sliderInfoContainer > h1 {
+    font-size: 4.375rem;
+    
+}
+
+.sliderInfoContainer > p {
+    margin: 3.125rem 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.1875rem;
+    width: 80%;
+    
 }
