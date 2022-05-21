@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* ............................... NAVIGATION SECTION ............................. */
+nav {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+nav > .navMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav > .navMenu > .leftNav {
+    flex: 1;
+    
+}
+nav > .navMenu > .leftNav > .logo {
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav > .navMenu > .centerNav {
+    flex: 2;
+}
+
+nav > .navMenu > .centerNav > ul {
+    display: flex;
+   align-items: center;
+   justify-content: center;
+
+
+}
+
+nav > .navMenu > .centerNav > ul > li {
+    list-style: none !important;
+    margin-right: 1rem;
+    font-weight: 400;
+
+}
+
+nav > .navMenu > .rightNav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+nav > .navMenu > .rightNav > .cartIcon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+nav > .navMenu > .rightNav > .cartIcon > .fas {
+    margin-right: 1rem;
+
+}
+nav > .navMenu > .rightNav > .cartIcon > .fas > .cartItem {
+    vertical-align: super;
+
+}
