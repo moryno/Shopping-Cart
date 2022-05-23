@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../css/checkout.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Roboto:wght@100;300;400;500;700;900&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/889562c6d8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navMenu">
+        <div class="leftNav">
+          <div class="logo">
+            <h1>SHOP</h1>
+          </div>
+        </div>
+        <div class="centerNav">
+          <ul>
+            <li>HOME</li>
+            <li>SHOP</li>
+            <li>CONTACT</li>
+          </ul>
+        </div>
+        <div class="rightNav">
+          <div class="cartIcon">
+            <i class="fas fa-shopping-cart"><span class="cartItem">2</span></i>
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="orderSection">
+      <div class="orderContainer">
+        <h2>YOUR BAG</h2>
+        <div class="topOrderContainer">
+          <button class="leftTopButton" type="submit">CONTINUE SHOPPING</button>
+          <button class="rightTopButton" type="submit">CHECKOUT NOW</button>
+        </div>
+        <div class="bottomOrderContainer">
+          <div class="orderInfoContainer">
+            <div class="order">
+              <div class="orderDetails">
+                <img src="../img/gridone.jpg" alt="orderImg" />
+                <div class="details">
+                  <p><b>Product:</b>Nike T-shirt</p>
+                  <p><b>ID:</b>7889900</p>
+                </div>
+              </div>
+              <div class="orderAmount">
+                <div class="singleOrderAmount">
+                  <button class="removeOrderQuantity" type="submit">-</button>
+                  <span class="quantityOrderAmount">1</span>
+                  <button class="addOrderQuantity" type="submit">+</button>
+                </div>
+                <h2 class="singleOrderPrice">Ksh2000</h2>
+              </div>
+            </div>
+          </div>
+          <div class="totalSummary">
+            <h2>ORDER SUMMARY</h2>
+            <div class="summaryDetail">
+              <p>Subtotal</p>
+              <p>Ksh1500</p>
+            </div>
+            <div class="summaryDetail">
+              <p>Discount</p>
+              <p>Ksh100</p>
+            </div>
+            <div class="summaryDetail">
+              <p>VAT</p>
+              <p>16%</p>
+            </div>
+            <div class="summaryDetail">
+              <h3>Total</h3>
+              <h3>Ksh3000</h3>
+            </div>
+            <button class="summaryCheckoutButton" type="submit">
+              CHECKOUT NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <hr />
+      <div class="footerContainer">
+        <div class="footerLeft">
+          <h2>SHOP</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+            fuga qui laudantium excepturi odio obcaecati! Quo suscipit nostrum
+            vel tempora repellendus, est culpa magnam dolorem enim sed illum
+            atque? Optio!
+          </p>
+          <div class="socialContainer">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="footerCenter">
+          <h2>Our Services</h2>
+          <p>Product Advertisements</p>
+          <p>Product bookings</p>
+        </div>
+        <div class="footerRight">
+          <div class="footerIcons">
+            <div class="icon">
+              <i class="fas fa-map-marker-alt"></i>
+              Baker House, Baker Street
+            </div>
+            <div class="icon">
+              <i class="fas fa-phone"></i>
+              +254 709 876 543
+            </div>
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
+              shop@email.com
+            </div>
+            <div class="icon">
+              <img
+                class="payment"
+                src="https://i.ibb.co/Qfvn4z6/payment.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

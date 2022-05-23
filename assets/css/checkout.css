@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Urbanist", sans-serif;
+}
+
+/* ............................... NAVIGATION SECTION ............................. */
+nav {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+}
+nav > .navMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav > .navMenu > .leftNav {
+    flex: 1;
+    
+}
+nav > .navMenu > .leftNav > .logo {
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav > .navMenu > .centerNav {
+    flex: 2;
+}
+
+nav > .navMenu > .centerNav > ul {
+    display: flex;
+   align-items: center;
+   justify-content: center;
+
+
+}
+
+nav > .navMenu > .centerNav > ul > li {
+    list-style: none !important;
+    margin-right: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 1.3rem;
+
+}
+
+nav > .navMenu > .centerNav > ul > li:hover {
+    
+    font-weight: 600;
+    
+
+}
+
+nav > .navMenu > .rightNav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+nav > .navMenu > .rightNav > .cartIcon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+
+}
+
+nav > .navMenu > .rightNav > .cartIcon > .fas {
+    margin-right: 1rem;
+
+}
+nav > .navMenu > .rightNav > .cartIcon > .fas > .cartItem {
+    vertical-align: super;
+
+}
+
+/* ..................................... ORDER SECTION .................................... */
+#orderSection > .orderContainer {
+    padding: 1.25rem;
+   
+}
+
+#orderSection > .orderContainer > h2 {
+    text-align: center;
+    font-weight: 500;
+}
+
+#orderSection > .orderContainer >.topOrderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem;
+}
+
+#orderSection > .orderContainer > .topOrderContainer > button{
+    border: none;
+    padding: 1rem 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+#orderSection > .orderContainer > .topOrderContainer > .leftTopButton {
+    background-color: transparent;
+    border: 2px solid black;
+} 
+
+#orderSection > .orderContainer > .topOrderContainer > .rightTopButton {
+    background-color: black;
+    color: white;
+   
+}
+
+#orderSection > .orderContainer > .bottomOrderContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+#orderSection > .orderContainer > .bottomOrderContainer > .orderInfoContainer {
+    flex:3;
+    
+}
+#orderSection > .orderContainer > .bottomOrderContainer > .orderInfoContainer > .order {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#orderSection > .orderContainer > .bottomOrderContainer > .orderInfoContainer > .order > .orderDetails {
+    display: flex;
+    flex: 2;
+    
+}
+
+#orderSection > .orderContainer > .bottomOrderContainer > .orderInfoContainer > .order > .orderDetails > img {
+    width: 12.5rem;
+    object-fit: cover;
+}
+
+#orderSection > .orderContainer > .bottomOrderContainer > .orderInfoContainer > .order > .orderDetails > .details {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#orderSection > .orderContainer > .bottomOrderContainer > .orderInfoContainer > .order > .orderAmount {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.singleOrderAmount {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+ .quantityOrderAmount {
+    display: flex;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 10px;
+    border: 1px solid teal;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.3125rem;
+}
+
+ .removeOrderQuantity, .addOrderQuantity {
+    border: none;
+    background-color: white;
+    font-weight: 500;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+#orderSection > .orderContainer > .bottomOrderContainer > .totalSummary {
+    flex:1;
+    border-radius: 0.75rem;
+    border: 0.5px solid lightgray;
+    padding: 1.25rem;
+    height: 50vh;
+}
+
+#orderSection > .orderContainer > .bottomOrderContainer > .totalSummary > h2 {
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#orderSection > .orderContainer > .bottomOrderContainer > .totalSummary > .summaryDetail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.25rem 0;
+}
+
+#orderSection > .orderContainer > .bottomOrderContainer > .totalSummary > .summaryDetail > p {
+    font-weight: 500;
+}
+
+#orderSection > .orderContainer > .bottomOrderContainer > .totalSummary > .summaryDetail > h3 {
+    font-weight: 700;
+}
+
+#orderSection > .orderContainer > .bottomOrderContainer > .totalSummary > .summaryCheckoutButton {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    background-color: black;
+    color: white;
+}
+
+/* .................................... FOOTER SECTION .................................. */
+
+#footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2rem 3rem;
+    height: 30vh;
+    /* position: absolute;
+    bottom: 0;
+    position: fixed; */
+   
+  }
+ 
+  #footer > .footerContainer {
+    display: flex;
+    margin-top: 3rem;
+    height: 20vh;
+  }
+  #footer > .footerContainer > .footerLeft {
+    flex:1;
+    
+  }
+
+  #footer > .footerContainer > .footerLeft > h2 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+  } 
+
+  .footerLeft > .socialContainer {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+   
+  }
+  .footerLeft > .socialContainer > .fab {
+    width: 1.1rem;
+    height: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  #footer i{
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+
+  }
+  #footer > .footerContainer > .footerCenter {
+    flex:1;
+    text-align: center;
+    line-height: 1.5;
+  }
+  #footer > .footerContainer > .footerCenter > h2 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+  }
+  #footer > .footerContainer > .footerCenter > p {
+    font-weight: 300;
+    opacity: 0.6;
+  }
+  #footer > .footerContainer > .footerRight {
+    flex:1;
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+  }
+
+  
+  .icon {
+    margin: 0.7rem;
+  }
+  .icon > .fas {
+    margin-right: 0.7rem;
+  }
+  
+  .fa-facebook-f:hover {
+      background-color: #3B5999;
+  }
+
+  .fa-twitter:hover {
+      background-color: #55ACEE;
+  }
+
+  .fa-instagram:hover {
+      background-color: #E60023;
+  }
+
+  .footerContainer > hr {
+    width: 70%;
+    margin: auto;
+    border: 1px solid lightgray;
+    opacity: 0.1;
+    
+  }
+ 
+  .payment{
+      width: 90%;
+     
+  }
+
+  @media screen and (max-width: 480px){
+      #footer{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height:55vh;
+
+        
+
+      }
+      #footer h1{
+          margin: 0;
+      }
+      .footerContainer{
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+          
+          
+      }
+      .socialContainer{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content:space-evenly;
+          margin-bottom: 0.6em;
+          
+      }
+      .footerCenter{
+          margin-bottom:0.4em;
+      }
+      .footerRight{
+          text-align: center;
+      }
+      
+  }
+
+  
