@@ -177,11 +177,12 @@ nav > .navMenu > .rightNav > .cartIcon > .fas > .cartItem {
     display: flex;
     width: 1.875rem;
     height: 1.875rem;
-    border-radius: 10px;
+    border-radius: 0.75rem;
     border: 1px solid teal;
     align-items: center;
     justify-content: center;
     margin: 0 0.3125rem;
+    text-align: center;
 }
 
  .removeOrderQuantity, .addOrderQuantity {

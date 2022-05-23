@@ -58,7 +58,7 @@
               <div class="orderAmount">
                 <div class="singleOrderAmount">
                   <button class="removeOrderQuantity" type="submit">-</button>
-                  <span class="quantityOrderAmount">1</span>
+                  <input class="quantityOrderAmount" value="1" />
                   <button class="addOrderQuantity" type="submit">+</button>
                 </div>
                 <h2 class="singleOrderPrice">Ksh2000</h2>
@@ -68,8 +68,8 @@
           <div class="totalSummary">
             <h2>ORDER SUMMARY</h2>
             <div class="summaryDetail">
-              <p>Subtotal</p>
-              <p>Ksh1500</p>
+              <p class="subtotalText">Subtotal</p>
+              <p class="subtotal">Ksh1500</p>
             </div>
             <div class="summaryDetail">
               <p>Discount</p>
@@ -137,6 +137,6 @@
         </div>
       </div>
     </section>
-    <script src="./assets/js/index.js"></script>
+    <script src="../js/checkout.js"></script>
   </body>
 </html>
