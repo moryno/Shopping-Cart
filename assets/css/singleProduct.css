@@ -85,167 +85,91 @@ nav > .navMenu > .rightNav > .cartIcon > .fas > .cartItem {
 
 }
 
-/* .................................. SLIDER SECTION ........................................... */
-#sliderSection {
-    width: 100%;
-    height: 100vh;
+/* .................................... SINGLE PRODUCT SECTION ........................... */
+#singleProduct > .singleContainer {
     display: flex;
-    position: relative;
-    overflow: hidden;
-}
-#sliderSection > .arrowLeft, #sliderSection > .arrowRight {
-    width: 3.125rem;
-    height: 3.125rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: #fff7f7;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    cursor: pointer;
-    z-index: 5;
-    opacity: 0.5;
-
+    padding: 3.125rem;
 }
 
-#sliderSection > .arrowLeft {
-    left: 0.5rem
-}
-#sliderSection > .arrowRight {
-    right: 0.5rem
-}
-
-#sliderSection > .sliderWrapper {
-    display: flex;
-    height: 100%;
-    
-}
-
-#sliderSection > .sliderWrapper > .slides {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-#sliderSection > .sliderWrapper > .slides > .sliderImgContainer {
-    flex: 1;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#sliderSection > .sliderWrapper > .slides > .sliderImgContainer > img {
-    
-    height: 80%;
-}
-
-#sliderSection > .sliderWrapper > .slides > .sliderInfoContainer {
+#singleProduct > .singleContainer > .singleImgContainer {
     flex: 1;
 }
 
-.sliderInfoContainer > h1 {
-    font-size: 4.375rem;
-    font-family: 'Roboto', sans-serif;
-}
-
-.sliderInfoContainer > p {
-    margin: 3.125rem 0;
-    font-size: 1.25rem;
-    font-weight: 500;
-    letter-spacing: 0.1875rem;
-    width: 80%;
-    
-}
-
-/* ............................... PRODUCT SECTION .................................... */
-
-#products {
+#singleProduct > .singleContainer > .singleImgContainer > img {
     width: 100%;
-    box-sizing: border-box;
-    padding: 1rem;
-}
-
-#products > h1 {
-    margin: 5rem 0;
-    font-size: 2.5rem;
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
-}
-
-#products > .productContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: auto;
-    margin-top: 3rem;
-}
-
-#products > .productContainer > .productCard {
-    width: 22%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid lightgray;
-    /* border-top-left-radius: 0.825rem;
-    border-top-right-radius: 0.825rem; */
-    box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 1rem;
-
-}
-
-
-
-#products > .productContainer > .productCard > img {
-    width: 100%;
-    height: 100%;
+    height: 90vh;
     object-fit: cover;
-    position: absolute;
-    z-index: 2;
+}
+
+#singleProduct > .singleContainer > .singleInfoContainer {
+    flex: 1;
+    padding: 0 3.125rem;
+}
+
+#singleProduct > .singleContainer > .singleInfoContainer > .singleTitle {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#singleProduct > .singleContainer > .singleInfoContainer > p {
+    line-height: 1.5;
+    letter-spacing: 1.5;
+}
+
+#singleProduct > .singleContainer > .singleInfoContainer > .singlePrice {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#singleProduct > .singleContainer > .singleInfoContainer > .singlePageQuantity {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
 }
 
-#products > .productContainer > .productCard > .productInfoContainer {
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.2);
-    z-index: 3;
+#singleProduct > .singleContainer > .singleInfoContainer > .singlePageQuantity > .singleAmount {
     display: flex;
     align-items: center;
+    font-weight: 500;
+}
+
+.singleInfoContainer > .singlePageQuantity > .singleAmount > .quantityAmount {
+    display: flex;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 10px;
+    border: 1px solid teal;
+    align-items: center;
     justify-content: center;
-    transition: all 0.5s ease;
+    margin: 0 0.3125rem;
+}
+
+.singleInfoContainer > .singlePageQuantity > .singleAddToCart {
+    border: none;
+    padding: 1rem 1.2rem;
+    font-weight: 500;
+    border: 2px solid teal;
+    cursor: pointer;
+    background-color: white;
+   
+}
+.singleInfoContainer > .singlePageQuantity > .singleAddToCart:hover{
+    background-color: #f8f4f4;
+}
+
+.singleAmount > .removeQuantity, .singleAmount > .addQuantity {
+    border: none;
+    background-color: white;
+    font-weight: 500;
+    font-size: 1.7rem;
     cursor: pointer;
 }
 
-#products > .productContainer > .productCard > .productInfoContainer:hover {
-    opacity: 1;
-    
-}
-
-#products > .productContainer > .productCard > .productInfoContainer > .productIcon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    border-radius: 50%;
-    margin: 0.625rem;
-    padding:0.625rem;
-    transition: all 0.5s ease; 
-}
-#products > .productContainer > .productCard > .productInfoContainer > .productIcon {
-    
-    background-color: #f5fbfd;
-    
-}
 
 /* .................................... FOOTER SECTION .................................. */
 
