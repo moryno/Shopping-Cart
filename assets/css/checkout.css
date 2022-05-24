@@ -53,6 +53,11 @@ nav > .navMenu > .centerNav > ul > li {
 
 }
 
+nav > .navMenu > .centerNav > ul > li > a {
+    text-decoration: inherit !important;
+    color: inherit;
+}
+
 nav > .navMenu > .centerNav > ul > li:hover {
     
     font-weight: 600;
@@ -132,31 +137,31 @@ nav > .navMenu > .rightNav > .cartIcon > .fas > .cartItem {
     flex:3;
     
 }
-#orderSection > .orderContainer > .bottomOrderContainer > .orderInfoContainer > .order {
+ .order {
     display: flex;
     justify-content: space-between;
     
 }
 
-#orderSection > .orderContainer > .bottomOrderContainer > .orderInfoContainer > .order > .orderDetails {
+.orderDetails {
     display: flex;
     flex: 2;
     
 }
 
-#orderSection > .orderContainer > .bottomOrderContainer > .orderInfoContainer > .order > .orderDetails > img {
+ .orderDetails > img {
     width: 12.5rem;
     object-fit: cover;
 }
 
-#orderSection > .orderContainer > .bottomOrderContainer > .orderInfoContainer > .order > .orderDetails > .details {
+.orderDetails > .details {
     padding: 1.25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-#orderSection > .orderContainer > .bottomOrderContainer > .orderInfoContainer > .order > .orderAmount {
+ .orderAmount {
     flex:1;
     display: flex;
     flex-direction: column;

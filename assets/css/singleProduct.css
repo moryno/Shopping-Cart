@@ -53,6 +53,11 @@ nav > .navMenu > .centerNav > ul > li {
 
 }
 
+nav > .navMenu > .centerNav > ul > li > a {
+    text-decoration: inherit !important;
+    color: inherit;
+}
+
 nav > .navMenu > .centerNav > ul > li:hover {
     
     font-weight: 600;
@@ -145,6 +150,7 @@ nav > .navMenu > .rightNav > .cartIcon > .fas > .cartItem {
     border-radius: 10px;
     border: 1px solid teal;
     align-items: center;
+    text-align: center;
     justify-content: center;
     margin: 0 0.3125rem;
 }

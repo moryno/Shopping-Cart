@@ -25,7 +25,7 @@
         </div>
         <div class="centerNav">
           <ul>
-            <li>HOME</li>
+            <li><a href="../../index.html"> HOME </a></li>
             <li>SHOP</li>
             <li>CONTACT</li>
           </ul>
@@ -47,23 +47,7 @@
         </div>
         <div class="bottomOrderContainer">
           <div class="orderInfoContainer">
-            <div class="order">
-              <div class="orderDetails">
-                <img src="../img/gridone.jpg" alt="orderImg" />
-                <div class="details">
-                  <p><b>Product:</b>Nike T-shirt</p>
-                  <p><b>ID:</b>7889900</p>
-                </div>
-              </div>
-              <div class="orderAmount">
-                <div class="singleOrderAmount">
-                  <button class="removeOrderQuantity" type="submit">-</button>
-                  <input class="quantityOrderAmount" value="1" />
-                  <button class="addOrderQuantity" type="submit">+</button>
-                </div>
-                <h2 class="singleOrderPrice">Ksh2000</h2>
-              </div>
-            </div>
+            <div id="displayCart"></div>
           </div>
           <div class="totalSummary">
             <h2>ORDER SUMMARY</h2>
@@ -81,7 +65,7 @@
             </div>
             <div class="summaryDetail">
               <h3>Total</h3>
-              <h3>Ksh3000</h3>
+              <h3 class="total">Ksh3000</h3>
             </div>
             <button class="summaryCheckoutButton" type="submit">
               CHECKOUT NOW
