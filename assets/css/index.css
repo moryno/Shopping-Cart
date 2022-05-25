@@ -190,13 +190,11 @@ nav > .navMenu > .rightNav > .cartIcon > .fas > .cartItem {
 }
 
 #products > .productContainer > .productCard {
-    width: 22%;
+    width: 24%;
     height: 50vh;
     display: flex;
     flex-direction: column;
     border: 1px solid lightgray;
-    /* border-top-left-radius: 0.825rem;
-    border-top-right-radius: 0.825rem; */
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
@@ -234,6 +232,24 @@ nav > .navMenu > .rightNav > .cartIcon > .fas > .cartItem {
 #products > .productContainer > .productCard > .productInfoContainer:hover {
     opacity: 1;
     
+    
+}
+ .productDetail {
+    color: white;
+    position: absolute;
+    bottom: 3rem;
+    z-index: 4;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    cursor: pointer;
+}
+.productTitle{
+  margin-bottom: 1rem;
+}
+.productDetail:hover {
+    opacity: 1;
 }
 
 #products > .productContainer > .productCard > .productInfoContainer > .productIcon {

@@ -1,49 +1,65 @@
 [
     {
       "id":"1",
-      "img": "../img/grid2.jpg",
+      "img": "./assets/img/grid2.jpg",
       "title": "Fest Event",
-      "venue": "Signature Club",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Liberofuga qui laudantium excepturi odio obcaecati! Quo suscipit nostrum vel tempora repellendus, est culpa magnam dolorem enim sed illum atque? Optio!",
       "price": 2000
      
     },
     {
       "id":"2",
-      "img": "../img/grid.jpg",
+      "img": "./assets/img/grid4.jpg",
       "title": "EDM Fest",
-      "venue": "Simba Lounge",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Liberofuga qui laudantium excepturi odio obcaecati! Quo suscipit nostrum vel tempora repellendus, est culpa magnam dolorem enim sed illum atque? Optio!",
       "price": 1800
      
     },
     {
       "id":"3",
-     "img": "../img/grid3.jpg",
+     "img": "./assets/img/grid3.jpg",
       "title": "Crossover",
-     "venue": "Quiver Lounge",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Liberofuga qui laudantium excepturi odio obcaecati! Quo suscipit nostrum vel tempora repellendus, est culpa magnam dolorem enim sed illum atque? Optio!",
       "price": 1000
      
     },
     {
       "id":"4",
-      "img": "../img/foodplus.jpg",
+      "img": "./assets/img/gridone.jpg",
       "title": "Food Plus",
-      "venue": "Club Life Style",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Liberofuga qui laudantium excepturi odio obcaecati! Quo suscipit nostrum vel tempora repellendus, est culpa magnam dolorem enim sed illum atque? Optio!",
       "price": 2000
      
     },
     {
       "id":5,
-      "img": "../img/kidsfest.jpg",
+      "img": "./assets/img/kidsfest.jpg",
       "title": "Kids Fest",
-      "venue": "Maple Valle7",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Liberofuga qui laudantium excepturi odio obcaecati! Quo suscipit nostrum vel tempora repellendus, est culpa magnam dolorem enim sed illum atque? Optio!",
       "price": 500
      
     },
     {
       "id":"6",
-      "img": "../img/grid5.jpg" ,
+      "img": "./assets/img/grid5.jpg" ,
       "title": "Country Night",
-     " venue": "KICC",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Liberofuga qui laudantium excepturi odio obcaecati! Quo suscipit nostrum vel tempora repellendus, est culpa magnam dolorem enim sed illum atque? Optio!",
+      "price": 2500
+     
+    },
+    {
+      "id":"7",
+      "img": "./assets/img/grid6.jpg" ,
+      "title": "Country Night",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Liberofuga qui laudantium excepturi odio obcaecati! Quo suscipit nostrum vel tempora repellendus, est culpa magnam dolorem enim sed illum atque? Optio!",
+      "price": 2500
+     
+    },
+    {
+      "id":"8",
+      "img": "./assets/img/affiliates.jpg" ,
+      "title": "Country Night",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Liberofuga qui laudantium excepturi odio obcaecati! Quo suscipit nostrum vel tempora repellendus, est culpa magnam dolorem enim sed illum atque? Optio!",
       "price": 2500
      
     }

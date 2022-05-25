@@ -1,17 +1,39 @@
-// fetch("./assets/js/data.json")
-//   .then(response => response.json())
-//   .then(data => appendData(data))
-//   .catch(err => console.log(err))
+fetch("./assets/js/data.json")
+  .then(response => response.json())
+  .then(data => appendData(data))
+  .catch(err => console.log(err))
 
-// const appendData = (data) => {
-//     const mainContainer = document.getElementById("cartContainer")
-//     data.forEach((item) => {
-//         const cartEvent = document.createElement("div")
-//         cartEvent.innerHTML = "Title: " + item.title;
-//         mainContainer.append(cartEvent)
-//     })
+const appendData = (data) => {
+    const mainContainer = document.querySelector(".productContainer")
+    data.forEach((item) => {
+        const productCard = document.createElement("div");
+        productCard.classList.add("productCard");
+        const productContent = `
+        <img src="${item.img}" alt="" />
+        <div class="productDetail">
+          <h3 class="productTitle">${item.title}</h3>
+          <h3 class="price">Ksh${item.price}</h3>
+          <p class="productDesc" style="display: none">
+          ${item.desc}
+          </p>
+        </div>
+        <div class="productInfoContainer">
+          <div class="productIcon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="productIcon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="productIcon">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+        `
+        productCard.innerHTML = productContent
+        mainContainer.append(productCard)
+    })
    
-// }
+}
 
 // ADD CAROUSEL TO THE SLIDER ITEMS
 const sliderContainer = document.querySelector(".sliderWrapper");
