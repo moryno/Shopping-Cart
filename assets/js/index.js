@@ -1,3 +1,27 @@
+window.addEventListener("load", () => {
+  // FUNCTION TO SEND DETAILS OF ITEM CHOSEN TO SINGLE PAGE
+const addDetails = (event) => {
+  const productDetail = event.target;
+  const productParent = productDetail.parentElement;
+  const productTitle = productParent.querySelector(".productTitle").innerHTML;
+  const productImg = productParent.querySelector(".productImg").src;;
+  const productPrice = productParent.querySelector(".price").innerHTML;
+  const productDesc = productParent.querySelector(".productDesc").innerHTML;
+
+  localStorage.setItem("PRODUCTIMAGE", productImg) 
+  localStorage.setItem("PRODUCTTITLE", productTitle); 
+  localStorage.setItem("PRODUCTPRICE", productPrice);
+  localStorage.setItem("PRODUCTDESC", productDesc);
+ }
+ 
+ 
+ const productDetails = document.querySelectorAll(".productInfoContainer");
+ productDetails.forEach((productDetail) => {
+   productDetail.addEventListener("click", addDetails)
+ })
+})
+
+
 fetch("./assets/js/data.json")
   .then(response => response.json())
   .then(data => appendData(data))
@@ -9,7 +33,7 @@ const appendData = (data) => {
         const productCard = document.createElement("div");
         productCard.classList.add("productCard");
         const productContent = `
-        <img src="${item.img}" alt="" />
+        <img class="productImg" src="${item.img}" alt="" />
         <div class="productDetail">
           <h3 class="productTitle">${item.title}</h3>
           <h3 class="price">Ksh${item.price}</h3>
@@ -69,3 +93,4 @@ prevButton.addEventListener("click", function(){
     const prevSlide = currentSlide.previousElementSibling;
     sliderMove(sliderContainer, currentSlide, prevSlide)
 })
+

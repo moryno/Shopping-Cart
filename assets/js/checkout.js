@@ -1,4 +1,4 @@
-window.addEventListener("load", () =>{
+window.addEventListener("load", () => {
     const title = localStorage.getItem("TITLE");
     const price = localStorage.getItem("PRICE");
     const imageSrc = localStorage.getItem("IMAGESRC");
