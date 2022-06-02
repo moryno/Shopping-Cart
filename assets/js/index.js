@@ -12,13 +12,18 @@ const addDetails = (event) => {
   localStorage.setItem("PRODUCTTITLE", productTitle); 
   localStorage.setItem("PRODUCTPRICE", productPrice);
   localStorage.setItem("PRODUCTDESC", productDesc);
+  window.location.href = "./assets/pages/singleProduct.html"
  }
  
  
  const productDetails = document.querySelectorAll(".productInfoContainer");
  productDetails.forEach((productDetail) => {
    productDetail.addEventListener("click", addDetails)
+   
  })
+ 
+
+
 })
 
 
@@ -33,6 +38,7 @@ const appendData = (data) => {
         const productCard = document.createElement("div");
         productCard.classList.add("productCard");
         const productContent = `
+        <div class="productCircle"></div>
         <img class="productImg" src="${item.img}" alt="" />
         <div class="productDetail">
           <h3 class="productTitle">${item.title}</h3>

@@ -188,11 +188,22 @@ nav > .navMenu > .rightNav > .cartIcon > .fas > .cartItem {
     margin: auto;
     margin-top: 3rem;
 }
+#products > .productContainer > .productCard > .productCircle {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    
+}
 
 #products > .productContainer > .productCard {
     width: 24%;
     height: 50vh;
+    background-color: #f5fbfd;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     border: 1px solid lightgray;
     box-sizing: border-box;
@@ -229,6 +240,7 @@ nav > .navMenu > .rightNav > .cartIcon > .fas > .cartItem {
     cursor: pointer;
 }
 
+
 #products > .productContainer > .productCard > .productInfoContainer:hover {
     opacity: 1;
     
@@ -262,10 +274,11 @@ nav > .navMenu > .rightNav > .cartIcon > .fas > .cartItem {
     padding:0.625rem;
     transition: all 0.5s ease; 
 }
-#products > .productContainer > .productCard > .productInfoContainer > .productIcon {
-    
-    background-color: #f5fbfd;
-    
+
+
+#products > .productContainer > .productCard > .productInfoContainer > .productIcon:hover{
+    background-color: #e9f5f5;
+    transform: scale(1.1);
 }
 
 /* .................................... FOOTER SECTION .................................. */

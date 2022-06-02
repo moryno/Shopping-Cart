@@ -111,3 +111,8 @@ const loadSingleProduct = (productTitle, productDesc, productImg, productPrice) 
     singleContainer.innerHTML = singleProductContent;
     parentSection.append(singleContainer);
 }
+// FUNCTION TO REDIRECT TO CHECKOUT
+const cartButton = document.querySelector(".fa-shopping-cart");
+cartButton.addEventListener("click", function(){
+    window.location.href = "../pages/checkout.html"
+})
