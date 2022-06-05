@@ -100,3 +100,8 @@ prevButton.addEventListener("click", function(){
     sliderMove(sliderContainer, currentSlide, prevSlide)
 })
 
+// ADD BACKGROUNDCOLOR TO SLIDER
+const slides = document.querySelectorAll(".slides");
+slides[0].style.backgroundColor = "#f5fafd";
+slides[1].style.backgroundColor = "#fcf1ed";
+slides[2].style.backgroundColor = "#fbf0f4";
